@@ -1,13 +1,142 @@
-/* Applying a minimal white-beige background with your grainy image */
-body {
-  background-image: url('/Portfolio-bySacha/assets/images/1Background.jpg'); /* Your grainy texture image */
-  background-repeat: no-repeat; /* Ensure the texture repeats */
-  background-size: 100% 100vh; /* Stretch width to 100% and height to the viewport height */
-  background-attachment: fixed; /* Optional: Keeps the image in place when scrolling */
-  background-position: center center;
-  font-family: Arial, sans-serif; /* Clean, minimalistic font */
-  color: #333; /* Dark text for contrast */
-  margin: 0;
-  padding: 0;
+section,
+div,
+main,
+header,
+footer {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}  
+
+#sections-container section {
+  min-height: 100vh; /* Ensures each section takes up at least the full viewport height */
+  display: flex; /* To center content vertically */
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  background-color: transparent; /* Make background color transparent */
 }
+
+#sections-container section:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* Optional: Add a thin line between sections */
+}
+
+/*rn useless*/
+.section-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  z-index: 1;
+}
+
+/* background of each section*/
+.about-bg {
+  background-image: url('/Portfolio-bySacha/assets/images/notgrainyaboutme-bg.jpg');
+  background-size: cover;         /* OR try 'contain' depending on effect you want */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio-bg {
+  background-image: url('/Portfolio-bySacha/assets/images/notgrainyportfolio-bg.jpg');
+}
+.projects-bg {
+  background-image: url('/Portfolio-bySacha/assets/images/notgrainyprojects-bg.jpg');
+}
+.blog-bg {
+  background-image: url('/Portfolio-bySacha/assets/images/notgrainyblog-bg.jpg');
+}
+.contactme-bg {
+  background-image: url('/Portfolio-bySacha/assets/images/notgrainycontact-bg.jpg');
+}
+
+/* glassy Cards*/
+.card-container {
+  display: flex;
+  justify-content:flex-start;   /* Centre horizontalement */
+  align-items: center;       /* Centre verticalement */
+  height: 100vh;             /* Pleine hauteur d’écran */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.07); 
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 640px;
+  color: #564f45;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box;
+}
+
+/*Hover effect */
+.glass-card:hover {
+  transform: scale(1.05);
+  background: #F9F4EE;
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.glass-card.active-hover {
+  transform: scale(1.05);
+  background: #F9F4EE;
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+/*Mobile responsive */
+@media (max-width: 480px) {
+  .glass-card {
+    max-width: 90vw;
+    padding: 1rem;
+  }
+}
+/*personnalisation de chaque cartes*/ /*jusque la rien */
+#about-me .glass-card {
+  position: absolute;
+  top: 85px;  /* distance from top */
+  left: 50px;  /* distance from left */
+}
+#portfolio .glass-card {
+  position: absolute;
+  top: 85px;  /* distance from top */
+  left: 50px;  /* distance from left */
+}
+#projects .glass-card {
+  position: absolute;
+  top: 85px;  /* distance from top */
+  left: 50px;  /* distance from left */
+}
+#blog .glass-card {
+  position: absolute;
+  top: 85px;  /* distance from top */
+  left: 50px;  /* distance from left */
+}
+#contact .glass-card {
+  position: absolute;
+  top: 85px;  /* distance from top */
+  left: 50px;  /* distance from left */
+}
+
+/*Mobile responsive */
+@media (max-width: 768px) {
+  #about-me .glass-card,
+  #portfolio .glass-card,
+  #projects .glass-card,
+  #blog .glass-card,
+  #contact .glass-card {
+    position: relative;      /* so they stack naturally */
+    top: 20px;
+    left: 0;
+    width: 90%;              /* take most of the screen */
+    margin: 0 auto 40px auto; /* center + add bottom spacing */
+  }
+}
+
 
