@@ -6,28 +6,65 @@ layout: null
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,463&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Title</title>
+  <title>Welcome-WebPortfolio</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/custom.css" />
   
   <style>
-    .playfair-display-custom {
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-    }
+  /*fonts*/
+    .space-mono-regular {
+      font-family: "Space Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+      }
 
-    html, body {
+      .space-mono-bold {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .space-mono-regular-italic {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .space-mono-bold-italic {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: italic;
+      }
+        .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 315;
+        font-style: normal;
+      }
+      .sub-titles {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+      }
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
       margin: 0;
       padding: 0;
       height: 100%;
       overflow: hidden;
       scroll-behavior: smooth;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Inter', sans-serif;
     }
-
     .welcome-text {
   font-size: 3.5rem;
   font-weight: 700;
@@ -39,6 +76,7 @@ layout: null
   animation: gradient-text 6s ease infinite;
   text-align: center;
   line-height: 1.2;
+  font-family: "Space Mono";
 }
 
 @keyframes gradient-text {
@@ -71,7 +109,6 @@ layout: null
     #welcome h1 {
       font-size: 4rem;
       margin: 0;
-      font-style: italic;
       font-weight: 463;
     }
  
@@ -155,7 +192,7 @@ layout: null
     .scroll-text {
       font-size: 1rem;
       color: #c7beaf;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Inter', sans-serif;
       user-select: none;
       margin-top: -1.2rem;
     }
@@ -179,6 +216,7 @@ layout: null
     .word-welcome {
       font-size: 1.6em; /* Make it bigger */
       font-weight: bold; /* Make it bold */
+      font-style: italic;
     }
 
 section,
@@ -190,11 +228,112 @@ footer {
   outline: none !important;
 }
 
+ /* Scrollspy container */
+ .scrollspy-container {
+  position: fixed;
+  top: 0;
+  right: 2vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.scrollspy-inner {
+  position: relative;
+  height: 80%;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;  /* Starts with 0% */
+  background-color: #002147;  /* Navy color */
+  transition: height 0.3s ease;
+  z-index: 2;
+}
+
+/* Scrollspy styles */
+.scrollspy {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollspy li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.scrollspy a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.scrollspy a .title {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.scrollspy a.active {
+  color: #002147; /* Active link color */
+  font-weight: bold;
+}
+
+.scrollspy a:hover {
+  color: #002147;
+  font-weight: bold;
+}
+
 </style>
 
 </head>
 <body>
-
+  <div class="scrollspy-container">
+    <div class="scrollspy-inner">
+      <div class="progress-line"></div>
+      <div class="progress-fill"></div>
+      <ul class="scrollspy">
+        <li><a href="#about-me" class="scrollspy-link"><span class="title">Speed Dating &nbsp; </span></a></li>
+        <!-- FOR LATER, check for general page distibution at the bottom <li><a href="#portfolio" class="scrollspy-link"><span class="title">The Portfolio &nbsp; </span></a></li> -->
+        <li><a href="#projects" class="scrollspy-link"><span class="title">The Projects &nbsp; </span></a></li>
+        <li><a href="#blog" class="scrollspy-link"><span class="title">The Blog &nbsp;</span></a></li>
+        <li><a href="#contact" class="scrollspy-link"><span class="title">Contact Me  &nbsp;</span></a></li>
+      </ul>
+    </div>
+  </div>
   <!-- Welcome Screen -->
   <section id="welcome">
     <h1 class="welcome-text">You're <span class="word-welcome">Welcome</span> to SH's <br> handmade website</h1>
@@ -210,27 +349,33 @@ footer {
   <main id="main">
     <section id="about-me" class="section-bg about-bg">
       <div class="card-container">
-        <a href="#about-me" class="glass-card">
-          <h2>About Me - <em>speed dating</em></h2>
-          <p>Hey! my name is Sacha Hosana and I'm a 16yo parisian High Schooler who wants to become an engineer and persue my studies outside of France. <br> A little bit about my familly: my mom is czecho-slovakian, my dad is Franco-Algerian, I have 2 brothers AND 2 dogs... Of course, with all these genes, I was exposed to diversity, to the discovery of others and of our world, and to travel very early in my life. 
-          <br> From the very beginning of my live, I have always been descibed as curious: I really enjoy exploring new concepts and learn. However, I do value my imagination, creativity and communication skills because I also love to create and lead projects. While I’m a firm believer in the idea that anything can become a passion with love, curiosity and work, my main interests lie in Astronomy, Engineering, Science, Economics... Besides that, I'm learning German and Arabic, I do Theater, I play guitar, I read and I lead different projects in multiple areas. </p>
+        <a href="#about-me" class="glass-card left-alignforthistext">
+          <h2 class= "sub-titles">speed dating</h2>
+          <p>Hey there!
+            I’m Sacha Hosana, a 16-year-old high schooler from Paris with big dreams of becoming an engineer and continuing my studies abroad.
+        <br><br>
+            A bit about my background: my mom is Czech-Slovak, my dad is Franco-Algerian, and I’ve got two brothers and two dogs. With that mix, I was lucky to grow up surrounded by diversity, open-mindedness, and a love for discovering new cultures and places. Traveling and exploring the world have been part of my life from the very beginning.
+            <br><br>
+            People often describe me as curious, and I’d say that’s pretty accurate. I love diving into new concepts and learning as much as I can. At the same time, I really value imagination, creativity, and communication, because I also enjoy creating and leading projects. I genuinely believe that with passion, curiosity, and hard-work, anything can become possible.
+            <br>
+            Some of the fields that fascinate me the most are Astronomy, Engineering, Science, and Economics. Outside of school, I’m learning German and Arabic, I do theatre, play guitar, read a lot, and take part in different projects across various fields.</p>
         </a>
       </div>
     </section>
-  
+  <!-- FOR LATER, check for the scrollspy also if restablish 
     <section id="portfolio" class="section-bg portfolio-bg">
       <div class="card-container">
-        <a href="#portfolio" class="glass-card">
-          <h2>The Portfolio</h2>
+        <a href="/Portfolio-bySacha/portfolio-page" class="glass-card">
+          <h2 class= "sub-titles">The Portfolio</h2>
           <p>Wanna see a review of my proffesional and academical achivement ?<br> clickkkkkk here! </p>
         </a>
       </div>
     </section>
-  
+  -->
     <section id="projects" class="section-bg projects-bg">
       <div class="card-container">
-        <a href="#projects" class="glass-card">
-          <h2>The Projects</h2>
+        <a href="/Portfolio-bySacha/projects-page" class="glass-card">
+          <h2 class= "sub-titles">The Projects</h2>
           <p>Dive into my past, current projects and progress updates right here... <br> clickkkkkk here! </p>
         </a>
       </div>
@@ -238,17 +383,17 @@ footer {
   
     <section id="blog" class="section-bg blog-bg">
       <div class="card-container">
-        <a href="#blog" class="glass-card">
-          <h2>The Blog</h2>
-          <p>Thoughts, discoveries, news and random stuff... What an amazing place <br> clickkkkkk here! </p>
+        <a href="/Portfolio-bySacha/blog-page" class="glass-card">
+          <h2 class= "sub-titles">The Blog</h2>
+          <p>Thoughts, discoveries, news and random stuff... Come discover my weekly blog<br> clickkkkkk here! </p>
         </a>
       </div>
     </section>
   
     <section id="contact" class="section-bg contactme-bg">
       <div class="card-container">
-        <a href="#contact" class="glass-card">
-          <h2>Contact Me</h2>
+        <a href="/Portfolio-bySacha/contact-page" class="glass-card">
+          <h2 class= "sub-titles">Contact Me</h2>
           <p>I'd &#x2764; to get in touch with you! feel free to contact me! <br> clickkkkkk here! </p>
         </a>
       </div>
@@ -309,6 +454,38 @@ footer {
       sections.forEach(section => observer.observe(section));
     }
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("#main > section");
+      const scrollspyLinks = document.querySelectorAll(".scrollspy-link");
+      const progressFill = document.querySelector(".progress-fill");
+  
+      function onScroll() {
+        let scrollTop = document.getElementById("main").scrollTop;
+        let scrollHeight = document.getElementById("main").scrollHeight;
+        let clientHeight = document.getElementById("main").clientHeight;
+        let scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+  
+        // Update progress bar
+        progressFill.style.height = `${scrollPercent}%`;
+  
+        // Highlight correct section
+        sections.forEach((section, index) => {
+          const offsetTop = section.offsetTop;
+          const offsetBottom = offsetTop + section.offsetHeight;
+  
+          if (scrollTop >= offsetTop - 10 && scrollTop < offsetBottom - 10) {
+            scrollspyLinks.forEach(link => link.classList.remove("active"));
+            scrollspyLinks[index].classList.add("active");
+          }
+        });
+      }
+  
+      document.getElementById("main").addEventListener("scroll", onScroll);
+      onScroll(); // Trigger once on load
+    });
+  </script>
+  
   
 </body>
 </html>

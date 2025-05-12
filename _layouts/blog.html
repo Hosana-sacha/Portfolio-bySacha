@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.baseurl }}/custom.css">
+  <style>
+    .featured-post-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .featured-post-link:hover .featured-post {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      transform: translateY(-4px);
+      border-radius: 20px;
+    }
+
+    .post-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .post-card-link:hover .post-card {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f6f0ea;
+      color: #1a1a1a;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .blog-header h1 {
+      font-size: 3rem;
+    }
+
+    .blog-header em {
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+    }
+
+    hr {
+      margin: 2rem 0;
+    }
+
+    .featured-post {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .featured-post .image {
+      width: 50%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      height: 300px;
+    }
+
+    .featured-post .content {
+      flex: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #002147;
+      color: white;
+      font-style: italic;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+      margin: 0.2rem;
+      font-size: 0.85rem;
+    }
+
+    .excerpt {
+      font-weight: bold;
+      font-style: italic;
+      border-left: 4px solid black;
+      padding-left: 0.5rem;
+    }
+
+    /* Updated CSS Grid Layout for Posts */
+    .old-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-fill columns with a min-width of 250px */
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-card .image {
+      height: 120px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .post-card .content {
+      padding: 0.8rem;
+    }
+
+    .post-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    /* for mobile phones */
+    @media (max-width: 768px) {
+      .featured-post {
+        flex-direction: column;
+      }
+
+      .featured-post .image {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .blog-header h1 {
+        font-size: 2rem;
+      }
+
+      .old-posts-grid h3 {
+        font-size: 1rem;
+      }
+
+      .post-card-link,
+      .featured-post-link {
+        padding: 0.5rem 0;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+  {% include header.html %}
+  <section class="blog-header">
+    <h1>The <strong>Blog </strong> <em>all written by Sacha Hosana </em></h1>
+    <p>This is where I drop a new article every week on something that caught my eye. Whether it’s a film, a video, a research paper, an event, or just a random article I found cool. Everything here is written by me (usually on the weekend... we’ve all got school, right? 🙂).</p>
+  </section>
+
+  <hr>
+
+  <!-- Featured Post -->
+  {% assign featured_post = site.posts | where: "featured", true | first %}
+  {% if featured_post %}
+  <a href="{{ featured_post.url | relative_url }}" class="featured-post-link">
+    <section class="featured-post">
+      <div class="image" style="background-image: url('{{ featured_post.image }}')"></div>
+      <div class="content">
+        <h2>{{ featured_post.title }}</h2>
+        <p class="date">{{ featured_post.date | date: "%A, %d %B %Y" }}</p>
+        <div class="tags">
+          {% for tag in featured_post.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <p class="excerpt">{{ featured_post.excerpt }}</p>
+      </div>
+    </section>
+  </a>  
+  {% endif %}
+
+  <!-- All Other Posts -->
+<section class="old-posts-grid">
+  {% assign sorted_posts = site.posts | where_exp:"item","item.featured != true" %}
+  {% for post in sorted_posts %}
+    <a href="{{ post.url | relative_url }}" class="post-card-link">
+      <div class="post-card">
+        <div class="image" style="background-image: url('{{ post.image }}')"></div>
+        <div class="content">
+          <h3>{{ post.title }}</h3>
+          <p class="date">{{ post.date | date: "%d/%m/%Y" }}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</section>
+</body>
+</html>

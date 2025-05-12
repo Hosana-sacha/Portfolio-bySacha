@@ -1,0 +1,391 @@
+---
+layout: null
+---
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Portfolio</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/custom.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/custom.css" />
+
+  <style>
+    main {
+      height: 100vh;
+    }
+
+    section {
+      scroll-snap-align: start;
+      height: 100vh;
+      width: 100%;
+      padding: 3rem 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-welcome {
+      background-color: #f8f6f0;
+      color: #002147;
+    }
+
+    .section-welcome h1 {
+      font-size: 3rem;
+      font-family: "Space Mono", monospace;
+      margin-bottom: 1rem;
+    }
+
+    .section-welcome p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .portfolio-section {
+      background-color: #f8f6f0;
+      color: #002147;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2.5rem;
+      font-family: "Space Mono", monospace;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-section p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .portfolio-section img {
+      margin-top: 2rem;
+      max-width: 90%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .section-welcome h1 {
+        font-size: 2rem;
+      }
+      .portfolio-section h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    /*scroll down effect*/
+    .section-welcome {
+  background-color: #f8f6f0;
+  color: #002147;
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  z-index: 15;
+}
+
+.welcome-content h1 {
+  font-size: 2.5rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  margin: 0;
+}
+
+.welcome-content p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+/* Scroll down Button */
+.scroll-box {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  z-index: 20;
+}
+
+.arrows {
+  position: relative;
+  width: clamp(2.7rem, 7vw, 4.7rem);
+  height: clamp(2.5rem, 8vw, 4rem);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+}
+
+.arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-second {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow::before,
+.arrow::after {
+  background: #c7beaf;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow::before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow::after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  50% {
+    opacity: 1;
+    top: 25%;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+  }
+}
+
+.scroll-text {
+  font-size: 1rem;
+  color: #c7beaf;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+  margin-top: -1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+    /* Scrollspy container */
+.scrollspy-container {
+  position: fixed;
+  top: 0;
+  right: 1vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.scrollspy-inner {
+  position: relative;
+  height: 80%;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;  /* Starts with 0% */
+  background-color: #002147;  /* Navy color */
+  transition: height 0.3s ease;
+  z-index: 2;
+}
+
+/* Scrollspy styles */
+.scrollspy {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollspy li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.scrollspy a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.scrollspy a .title {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.scrollspy a.active {
+  color: #002147; /* Active link color */
+  font-weight: bold;
+}
+
+.scrollspy a:hover {
+  color: #002147;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .scrollspy-container {
+    right: 3vw; /* Adjust positioning on small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .scrollspy-inner {
+    width: 140px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  {% include header.html %}
+  <!-- Scrollspy Container -->
+<div class="scrollspy-container">
+  <div class="scrollspy-inner">
+    <div class="progress-line"></div>
+    <div class="progress-fill"></div>
+    <ul class="scrollspy">
+      <li><a href="#section1" class="scrollspy-link"><span class="title">🏗️ Engineering Projects &nbsp; </span></a></li>
+      <li><a href="#section2" class="scrollspy-link"><span class="title">🎓 Academic Achievements &nbsp; </span></a></li>
+      <li><a href="#section3" class="scrollspy-link"><span class="title">❤️ Leçon de Cœur &nbsp; </span></a></li>
+      <li><a href="#section4" class="scrollspy-link"><span class="title">🌐 Web & Design &nbsp;</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+
+  <!-- Welcome Section -->
+  <section class="section-welcome">
+    <h1>The <b>Portfolio </b></h1>
+    <p>This page showcases the different aspects of my academic, creative, and personal projects. Scroll down to explore.</p>
+    <a href="#section1" class="scroll-box">
+        <div class="arrows">
+          <div class="arrow arrow-first"></div>
+          <div class="arrow arrow-second"></div>
+        </div>
+        <span class="scroll-text">Scroll down</span>
+      </a>    
+  </section>
+
+  <!-- Section 1 -->
+  <section class="portfolio-section" id="section1">
+    <h2> Engineering Projects</h2>
+    <p>I designed, prototyped, and tested several devices </p>
+    <img src="{{ site.baseurl }}/assets/images/engineering-project.jpg" alt="Engineering prototype" />
+  </section>
+
+  <!-- Section 2 -->
+  <section class="portfolio-section" id="section2">
+    <h2> Academic Achievements</h2>
+    <p>I received the Gold Award for Best Invention at a summer engineering program </p>
+    <img src="{{ site.baseurl }}/assets/images/award.jpg" alt="Gold award ceremony" />
+  </section>
+
+  <!-- Section 3 -->
+  <section class="portfolio-section" id="section3">
+    <h2> Leçon de Cœur</h2>
+    <p>I'm developing a non-profit tutoring platform </p>
+    <img src="{{ site.baseurl }}/assets/images/lesson-de-coeur.jpg" alt="Leçon de Cœur project" />
+  </section>
+
+  <!-- Section 4 -->
+  <section class="portfolio-section" id="section4">
+    <h2>Web & Design</h2>
+    <p>This website you're browsing was built by me from scratch </p>
+    <img src="{{ site.baseurl }}/assets/images/website-preview.jpg" alt="Website screenshot" />
+  </section>
+
+</main>
+<script>
+  // Scrollspy functionality
+  window.addEventListener('scroll', function () {
+    // Get the total scroll height
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    
+    // Calculate the progress (in percentage)
+    const progress = (scrollPosition / scrollHeight) * 100;
+    
+    // Update the progress bar height
+    const progressBar = document.querySelector('.progress-fill');
+    progressBar.style.height = progress + '%';
+});
+
+</script>
+
+</body>
+</html>
+

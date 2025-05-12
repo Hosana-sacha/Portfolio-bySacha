@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #f7f1eb;
+      color: #1a1a1a;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .divider {
+      border-bottom: 2px solid #1a1a1a;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* ✅ Max 2 per row */
+      gap: 2rem;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover img {
+      opacity: 0.3;
+    }
+
+    .project-card .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .overlay p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="intro">
+      <p>Welcome to my project space! Here, you can explore the main projects I’ve completed, the ones I’m currently working on, and even a few ideas I’m planning for the future.</p>
+      <p>If a project catches your eye, just click on the card to learn more. For ongoing projects, you’ll be able to follow my progress and dive into my thinking process as it evolves week by week.</p>
+      <p>Enjoy!</p>
+    </div>
+    <div class="divider"></div>
+
+    <div class="grid">
+      {% for project in site.projects %}
+      <a href="{{ site.baseurl }}{{ project.url }}" class="project-card">
+          <img src="{{ project.image }}" alt="{{ project.title }}">
+          <div class="overlay">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

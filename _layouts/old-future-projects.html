@@ -9,13 +9,6 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ site.baseurl }}/custom.css">
   <style>
-    
-  .left-image{
-    max-width: 100%;
-     height: auto; 
-     display: block; 
-     margin: 1rem auto;
-  }
     body {
       font-family: sans-serif;
       background: #f6f0ea;
@@ -74,7 +67,6 @@ layout: null
   <article>
     <header class="post-header">
       <h1>{{ page.title }}</h1>
-      <p class="date">{{ page.date | date: "%A, %d %B %Y" }}</p>
       {% if page.tags %}
         <div class="tags">
           {% for tag in page.tags %}

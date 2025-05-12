@@ -38,25 +38,25 @@ title: "Welcome to My Portfolio"
       </a>
     </section>
     <section id="portfolio" class="section-bg portfolio-bg">
-      <a href="#portfolio" class="glass-card">
+      <a href="/Portfolio-bySacha/portfolio-page" class="glass-card">
         <h2>The Portfolio</h2>
         <p>Explore a curated selection of my best creative and technical work.</p>
       </a>
     </section>
     <section id="projects" class="section-bg projects-bg">
-      <a href="#projects" class="glass-card">
+      <a href="/Portfolio-bySacha/projects-page" class="glass-card">
         <h2>The Projects</h2>
         <p>Dive into my personal and collaborative projects, from start to finish.</p>
       </a>
     </section>
     <section id="blog" class="section-bg blog-bg">
-      <a href="#blog" class="glass-card">
+      <a href="/Portfolio-bySacha/blog-page" class="glass-card">
         <h2>The Blog</h2>
         <p>Thoughts, progress updates, and reflections on everything I build.</p>
       </a>
     </section>
     <section id="contact" class="section-bg contactme-bg">
-      <a href="#contact" class="glass-card">
+      <a href="/Portfolio-bySacha/contact-page" class="glass-card">
         <h2>Contact Me</h2>
         <p>Get in touch for questions, collaborations, or just to say hi!</p>
       </a>

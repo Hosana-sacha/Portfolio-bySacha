@@ -77,6 +77,12 @@ footer {
   box-sizing: border-box;
 }
 
+.left-alignforthistext {
+  margin-left: 2rem;
+  margin-right: auto;
+  text-align: left;
+}
+
 /*Hover effect */
 .glass-card:hover {
   transform: scale(1.05);
