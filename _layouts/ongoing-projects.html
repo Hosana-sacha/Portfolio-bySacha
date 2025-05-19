@@ -269,7 +269,6 @@ layout: null
 <body>
   {% include header.html %}
   <article>
-
     <!-- Header -->
     <header class="post-header">
       <h1>{{ page.title }}</h1>
@@ -289,42 +288,48 @@ layout: null
 
     <!-- Toggle Switch -->
     <label for="toggle" class="switch" aria-label="Toggle Mode">
-        <input type="checkbox" id="toggle" />
-        <span>Main Idea</span>
-        <span>Progression</span>
-      </label>
+      <input type="checkbox" id="toggle" />
+      <span>Main Idea</span>
+      <span>Progression</span>
+    </label>
 
-    <!-- Main Idea Section (filled by user in Markdown with `main_idea` front matter or content block) -->
-    <section class="main-idea-section visible">
-      {{ page.main_idea }}
+    {% comment %}
+      Split the entire page content at our <!--PROGRESSION--> marker.
+      parts[0] is everything before it (Main Idea),
+      parts[1] is everything after it (Progress Timeline + rest).
+    {% endcomment %}
+    {% assign parts = page.content | split: '<!--PROGRESSION-->' %}
+
+    <!-- Main Idea Section -->
+    <section class="main-idea-section visible" id="main-idea">
+      {{ parts[0] | markdownify }}
     </section>
 
-    <!-- Progression Scroll-Snap Section -->
+    <!-- Progression Section -->
     <div class="progression-wrapper">
-    <section class="progression-section scroll-snap-container">
-      {{ content }}
-    </section>
+      <section class="progression-section scroll-snap-container">
+        {{ parts[1] | markdownify }}
+      </section>
     </div>
-
   </article>
-<!--this script for the switch button-->
-<script>
+
+  <script>
     const viewToggle = document.getElementById('toggle');
-    const mainIdea = document.querySelector('.main-idea-section');
+    const mainIdea  = document.querySelector('.main-idea-section');
     const progression = document.querySelector('.progression-section');
-  
+
     function toggleSections() {
       if (viewToggle.checked) {
-        mainIdea.classList.remove('visible');
+        mainIdea .classList.remove('visible');
         progression.classList.add('visible');
       } else {
         progression.classList.remove('visible');
-        mainIdea.classList.add('visible');
+        mainIdea .classList.add('visible');
       }
     }
-  
+
     viewToggle.addEventListener('change', toggleSections);
     document.addEventListener('DOMContentLoaded', toggleSections);
-  </script>  
+  </script>
 </body>
 </html>
