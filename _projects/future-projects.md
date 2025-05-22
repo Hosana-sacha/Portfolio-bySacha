@@ -1,7 +1,7 @@
 ---
 title: "<i> Alea Jacta </i>"
 description: "take a glimpse at my future work, coming soon !<BR> &#x1F7E3; Not Started &#x1F7E3;"
-image: /Portfolio-bySacha/ressourcesblog/dubai.jpg
+image: /Portfolio-bySacha/ressourcesprojects/future/dubai-sacha.JPG
 layout: old-future-projects
 ---
 

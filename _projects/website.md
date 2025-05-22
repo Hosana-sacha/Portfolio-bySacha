@@ -1,7 +1,7 @@
 ---
 title: "This Website"
 description: "A hand coded personal website using jekyll as a base program, ruby, html, css and some java script! <BR> &#128308; Finished &#128308;"
-image: /Portfolio-bySacha/ressourcesprojects/website/me-confused.jpeg
+image: /Portfolio-bySacha/ressourcesprojects/website/code-website.jpg
 layout: old-future-projects
 ---
 
