@@ -6,7 +6,7 @@ tags: [aerodynamics, planes, airflow]
 categories: blog
 excerpt: "I wanted to write an article about a research paper I’m currently reading but when trying to understand the subject, I found myself unable to understand the challenges that the researchers faced. They talked about “ground effect” but I never heard of it.  "  
 image: /Portfolio-bySacha/ressourcesblog/airflow.jpg
-featured: true
+featured: false
 ---
 I wanted to write an article about a research paper I’m currently reading but when trying to understand the subject, I found myself unable to understand the challenges that the researchers faced. They talked about “ground effect” but I never heard of it. Little did I know that it was more famous for airplanes and their airflow aerodynamics… I’m  really glad to have learned more about this effect as I learned a lot about aerodynamics at my last summer experience at UCL. 
 
