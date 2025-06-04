@@ -6,7 +6,7 @@ tags: [neutino detector, resarch, standard model]
 categories: blog
 excerpt: "Last time, I clicked on a video for the only reason that it had a good miniature ( yeah I didn’t even look at the title). I was very surprised to discover the incredible Super-Kamiokande: an immense neutrino detector from japan."  
 image: /Portfolio-bySacha/ressourcesblog/section-3/neutino-detector.png
-featured: true
+featured: false
 ---
 Last time, I clicked on a video for the only reason that it had a good miniature ( yeah I didn’t even look at the title). I was very surprised to discover the incredible Super-Kamiokande: an immense neutrino detector from japan. 
 
