@@ -1,26 +1,26 @@
-section,
-div,
-main,
-header,
-footer {
+/* RESET + BASE */
+section, div, main, header, footer {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-}  
+  box-sizing: border-box;
+}
 
+/* SECTIONS CONTAINER */
 #sections-container section {
-  min-height: 100vh; /* Ensures each section takes up at least the full viewport height */
-  display: flex; /* To center content vertically */
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  background-color: transparent; /* Make background color transparent */
+  justify-content: center;
+  background-color: transparent;
+  padding: 2rem 1rem; /* spacing for content */
 }
 
 #sections-container section:not(:last-child) {
-  border-bottom: 1px solid #ddd; /* Optional: Add a thin line between sections */
+  border-bottom: 1px solid #ddd;
 }
 
-/*rn useless*/
+/* BACKGROUND STYLES */
 .section-bg {
   background-size: cover;
   background-position: center;
@@ -31,12 +31,11 @@ footer {
   z-index: 1;
 }
 
-/* background of each section*/
 .about-bg {
   background-image: url('/assets/images/notgrainyaboutme-bg.jpg');
-  background-size: cover;         /* OR try 'contain' depending on effect you want */
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 .portfolio-bg {
   background-image: url('/assets/images/notgrainyportfolio-bg.jpg');
@@ -51,15 +50,19 @@ footer {
   background-image: url('/assets/images/notgrainycontact-bg.jpg');
 }
 
-/* glassy Cards*/
+/* FLEX CONTAINER FOR CARDS */
 .card-container {
   display: flex;
-  justify-content:flex-start;   /* Centre horizontalement */
-  align-items: center;       /* Centre verticalement */
-  height: 100vh;             /* Pleine hauteur d’écran */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
+  padding: 1rem;
 }
+
+/* GLASS CARD STYLES */
 .glass-card {
   background: rgba(255, 255, 255, 0.07); 
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -74,7 +77,14 @@ footer {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.glass-card:hover,
+.glass-card.active-hover {
+  transform: scale(1.05);
+  background: #F9F4EE;
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
 }
 
 .left-alignforthistext {
@@ -83,80 +93,64 @@ footer {
   text-align: left;
 }
 
-/*Hover effect */
-.glass-card:hover {
-  transform: scale(1.05);
-  background: #F9F4EE;
-  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
-}
-
-.glass-card.active-hover {
-  transform: scale(1.05);
-  background: #F9F4EE;
-  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
-}
-
-/*Mobile responsive */
-@media (max-width: 480px) {
-  .glass-card {
-    max-width: 90vw;
-    padding: 1rem;
-  }
-}
-/*personnalisation de chaque cartes*/ /*jusque la rien */
-#about-me .glass-card {
-  position: absolute;
-  top: 85px;  /* distance from top */
-  left: 50px;  /* distance from left */
-}
-#portfolio .glass-card {
-  position: absolute;
-  top: 85px;  /* distance from top */
-  left: 50px;  /* distance from left */
-}
-#projects .glass-card {
-  position: absolute;
-  top: 85px;  /* distance from top */
-  left: 50px;  /* distance from left */
-}
-#blog .glass-card {
-  position: absolute;
-  top: 85px;  /* distance from top */
-  left: 50px;  /* distance from left */
-}
+/* POSITIONING PER SECTION (DESKTOP) */
+#about-me .glass-card,
+#portfolio .glass-card,
+#projects .glass-card,
+#blog .glass-card,
 #contact .glass-card {
   position: absolute;
-  top: 85px;  /* distance from top */
-  left: 50px;  /* distance from left */
+  top: 85px;
+  left: 50px;
 }
 
-/*Mobile responsive */
-@media (max-width: 768px) {
+/* MOBILE & TABLET RESPONSIVE POSITIONING */
+@media (max-width: 1024px) {
   #about-me .glass-card,
   #portfolio .glass-card,
   #projects .glass-card,
   #blog .glass-card,
   #contact .glass-card {
-    position: relative;      /* so they stack naturally */
-    top: 20px;
-    left: 0;
-    width: 90%;              /* take most of the screen */
-    margin: 0 auto 40px auto; /* center + add bottom spacing */
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    max-width: 90vw;
+    margin: 2rem auto;
+  }
+  .card-container {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
   }
 }
 
-
-  .left-image{
-    max-width: 100%;
-     height: auto; 
-     display: block; 
-     margin: 1rem auto;
+/* ULTRA SMALL SCREENS */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 1rem;
+    font-size: 0.95rem;
   }
 
-  .download-button {
+  .left-alignforthistext {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* IMAGES */
+.left-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* BUTTONS */
+.download-button {
   display: inline-block;
   padding: 0.75em 1.5em;
-  background-color: #1a1a2e; /* Very dark navy */
+  background-color: #1a1a2e;
   color: #ffffff;
   border-radius: 12px;
   text-decoration: none;

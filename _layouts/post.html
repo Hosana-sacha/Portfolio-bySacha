@@ -7,20 +7,13 @@ layout: null
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="/custom.css">
   <style>
-    
-  .left-image{
-    max-width: 100%;
-     height: auto; 
-     display: block; 
-     margin: 1rem auto;
-  }
     body {
       font-family: sans-serif;
       background: #f6f0ea;
       color: #1a1a1a;
-      padding: 2rem;
+      padding: 1.5rem;
       max-width: 800px;
       margin: auto;
     }
@@ -31,8 +24,8 @@ layout: null
     }
 
     .post-header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
     }
 
     .post-header .date {
@@ -42,30 +35,59 @@ layout: null
 
     .tags {
       margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.4rem;
     }
 
     .tag {
-      display: inline-block;
       background-color: #f4a261;
       color: black;
       font-style: italic;
-      padding: 0.2rem 0.6rem;
+      padding: 0.25rem 0.6rem;
       border-radius: 10px;
-      margin: 0.2rem;
       font-size: 0.85rem;
     }
 
     .hero-image {
       width: 100%;
-      height: 300px;
+      max-height: 350px;
       object-fit: cover;
       border-radius: 20px;
       margin-bottom: 2rem;
+      display: block;
     }
 
     .post-content {
       line-height: 1.7;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      word-wrap: break-word;
+    }
+
+    .left-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .post-header h1 {
+        font-size: 1.6rem;
+      }
+
+      .post-content {
+        font-size: 1rem;
+      }
+
+      .hero-image {
+        max-height: 220px;
+      }
     }
   </style>
 </head>
@@ -92,6 +114,5 @@ layout: null
       {{ content }}
     </section>
   </article>
-
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }}</title>
   <style>
+    /* Base styles */
     body {
       margin: 0;
       font-family: system-ui, sans-serif;
@@ -15,29 +16,33 @@
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2rem 1rem; /* added horizontal padding for mobile */
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 900;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
     .intro {
       margin-bottom: 2rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.6;
+      text-align: center;
     }
 
     .divider {
       border-bottom: 2px solid #1a1a1a;
-      margin-bottom: 2rem;
+      margin: 2rem auto;
+      width: 60%;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* ✅ Max 2 per row */
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ✅ auto responsiveness */
       gap: 2rem;
     }
 
@@ -46,7 +51,7 @@
       overflow: hidden;
       border-radius: 1rem;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project-card img {
@@ -55,6 +60,11 @@
       display: block;
       opacity: 1;
       transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
     .project-card:hover img {
@@ -85,7 +95,7 @@
 
     .overlay h2 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .overlay p {
@@ -93,9 +103,21 @@
       font-size: 1rem;
     }
 
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr; /* Stack on smaller screens */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
+
+      .overlay h2 {
+        font-size: 1.1rem;
+      }
+
+      .overlay p {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -114,12 +136,12 @@
     <div class="grid">
       {% for project in site.projects %}
       <a href="{{ project.url }}" class="project-card">
-          <img src="{{ project.image }}" alt="{{ project.title }}">
-          <div class="overlay">
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-          </div>
-        </a>
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <div class="overlay">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+        </div>
+      </a>
       {% endfor %}
     </div>
   </div>
