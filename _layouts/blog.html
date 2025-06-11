@@ -160,7 +160,7 @@
   <!-- Featured Post -->
   {% assign featured_post = site.posts | where: "featured", true | first %}
   {% if featured_post %}
-  <a href="{{ featured_post.url | relative_url }}" class="featured-post-link">
+  <a href="{{ featured_post.url }}" class="featured-post-link">
     <section class="featured-post">
       <div class="image" style="background-image: url('{{ featured_post.image }}')"></div>
       <div class="content">
@@ -181,7 +181,7 @@
 <section class="old-posts-grid">
   {% assign sorted_posts = site.posts | where_exp:"item","item.featured != true" %}
   {% for post in sorted_posts %}
-    <a href="{{ post.url | relative_url }}" class="post-card-link">
+    <a href="{{ post.url }}" class="post-card-link">
       <div class="post-card">
         <div class="image" style="background-image: url('{{ post.image }}')"></div>
         <div class="content">
