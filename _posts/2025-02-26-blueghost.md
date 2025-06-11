@@ -5,7 +5,7 @@ date: 2025-02-26
 tags: [NASA, Moon, Exploration]
 categories: blog
 excerpt: "While scrolling through the news, I came across the Blue Ghost mission as an astronomy fan, and its launch on January 15 (2025)..."  # Optional: if you want to define an excerpt
-image: /Portfolio-bySacha/ressourcesblog/Blue_Ghost_Mission.jpg
+image: /ressourcesblog/Blue_Ghost_Mission.jpg
 featured: false  # Only one post should be featured
 ---
 

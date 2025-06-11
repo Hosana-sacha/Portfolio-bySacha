@@ -5,7 +5,7 @@ date: 2025-03-29
 tags: [ESA, aerospace, Sun]
 categories: blog
 excerpt: "One day, I was on vacation in NYC with my family. I was little and I remember going to the naval museum and being on the deck, watching a solar eclipse. This is a core memory for me"  
-image: /Portfolio-bySacha/ressourcesblog/suncorona.jpg
+image: /ressourcesblog/suncorona.jpg
 featured: false
 ---
 One day, I was on vacation in NYC with my family. I was little and I remember going to the naval museum and being on the deck, watching a solar eclipse. This is a core memory for me, watching everyone being so concentrated on the moon slowly passing in front of the sun… It really felt like a magical, even mystical moment to me. 
@@ -21,7 +21,7 @@ Also, the corona is responsible for powerful solar phenomena like geomagnetic st
 That’s why scientists created Proba-3, a mission involving two spacecraft designed to simulate solar eclipses in space, yes, only that. And they do so far more often than nature allows: proba-3 is able to study the corona for about 6 hours during each 19-hour and 36-minute orbit.
 Here's how it works: two satellites fly in formation. One, known as the “occulting” ( called the mask ) satellite, blocks the Sun’s light, casting a shadow onto the second “observing” satellite. This setup replicates a total eclipse, giving scientists a clear view of the corona.
 The mask satellite also carries an instrument to monitor the Sun’s total energy output, known as solar irradiance which is a key factor in climate studies.
-<img src="/Portfolio-bySacha/ressourcesblog/shadowsatelite.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/shadowsatelite.jpg" alt="Image" class="left-image">
 
 Scientists chose an elliptical orbit for this mission rather than a low Earth orbit. This is because low orbits involve stronger gravitational forces, more atmospheric drag, and light reflections from Earth that would interfere with measurements. The elliptical orbit stretches from 600 km at its closest point to 60,000 km at its farthest, where the spacecraft moves more slowly which gives more time for observations when closest to the Sun ( smart isn’t it ? ) 
 During most of the orbit, the satellites fly close together in a sort of standby mode ( close to each other but not aligned ), and as they approach the observation zone, they receive a signal and begin a 2-hour repositioning sequence to form the perfect eclipse alignment.

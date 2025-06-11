@@ -1,7 +1,7 @@
 ---
 title: "This Website"
 description: "A hand coded personal website using jekyll as a base program, ruby, html, css and some java script! <BR> &#128308; Finished &#128308;"
-image: /Portfolio-bySacha/ressourcesprojects/website/code-website.jpg
+image: /ressourcesprojects/website/code-website.jpg
 layout: old-future-projects
 ---
 
@@ -15,17 +15,17 @@ layout: old-future-projects
   </p>
 
   <p>To be honest, the first time I started jekyll, I was…puzzled. this is what looks like the ruby installer ( the language):</p>
-  <img src="/Portfolio-bySacha/ressourcesprojects/website/ruby.png" alt="Image" class="left-image">
-  <p>and this is how the jekyll program looks like: </p> <img src="/Portfolio-bySacha/ressourcesprojects/website/jekyll.png" alt="Image" class="left-image">
+  <img src="/ressourcesprojects/website/ruby.png" alt="Image" class="left-image">
+  <p>and this is how the jekyll program looks like: </p> <img src="/ressourcesprojects/website/jekyll.png" alt="Image" class="left-image">
 
-  <p>Yes, not very modern and stylish. But then, I used Visual Studio Code to code into a folder called my-website and created my own first website. It wasn’t very impressive though… It looked like a blank html page with nothing but a header and info about jekyll. It was terrible, both in design and structure. this was the first logo: </p> <img src="/Portfolio-bySacha/ressourcesprojects/website/logo-sacha'snebula.png" alt="Image" class="left-image">
+  <p>Yes, not very modern and stylish. But then, I used Visual Studio Code to code into a folder called my-website and created my own first website. It wasn’t very impressive though… It looked like a blank html page with nothing but a header and info about jekyll. It was terrible, both in design and structure. this was the first logo: </p> <img src="/ressourcesprojects/website/logo-sacha'snebula.png" alt="Image" class="left-image">
 
   <p>I continued working on this file for a few months, trying to raw build a website for hours until 3AM just to delete the functionality I passed the night on because I felt like I didn’t like it the morning after :). </p>
 
   <p>I could spend entire days trying to make something work or creating a new sub-page just to change everything the day before. It was frustrating but at the end, it’s rewarding to see a finished website that suits exactly the vision I had. I learned a lot on the way but I think it was very positive. </p>
 
   <p>I even used the existing files and my knowledge to build an entire website for a biology project, showcasing our group work on photosynthesis in less than a week ! It was a website that was built around us telling a story about photosynthesis and its utility in our world in the 2000s ish very kitch website.  My teacher was really happy about this one :). You can maybe access it with this url: https://hosana-sacha.github.io/laphotosyntheseSVT/ </p>
-  <img src="/Portfolio-bySacha/ressourcesprojects/website/SVT.png" alt="Image" class="left-image">
+  <img src="/ressourcesprojects/website/SVT.png" alt="Image" class="left-image">
 
   <P>
   Building this website isn't only a new ticked box on a piece of paper somewhere in my room called “projects”, it’s a real investment I made for myself. Developing this Web Application helped me gain several valuable skills, both from an engineering point of view and a personal point of view: <BR>

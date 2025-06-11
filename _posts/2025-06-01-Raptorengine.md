@@ -5,7 +5,7 @@ date: 2025-06-01
 tags: [SpaceX, aerospace engineering, buisness model]
 categories: blog
 excerpt: "Since I’m very young, I’ve always followed news and the arrival of new technologies around aerospace engeneering. It often seems very complicated and reserved to an elite capable of understanding how rockets and spaceships works... "  
-image: /Portfolio-bySacha/ressourcesblog/section-3/raptor-images.png
+image: /ressourcesblog/section-3/raptor-images.png
 featured: true
 ---
 Since I’m very young, I’ve always followed news and the arrival of new technologies around aerospace engeneering. It often seems very complicated and reserved to an elite capable of understanding how rockets and spaceships works. Turns out it’s not that hard if you deeply want to understand it. 
@@ -25,7 +25,7 @@ This is a big deal. Traditional rocket engines often use an “open-cycle design
 - Extends engine life ( because of low operation temp.)
 
 - => overall, Better performance
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/raptor2.png" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/raptor2.png" alt="Image" class="left-image">
 It's worth noting that before the Raptor, no full-flow staged combustion engine had ever flown. It was first theorized by soviets in the 50 which then had made a prototype but nothing incredible. 
 
 <b>2/  Raptor use methane and liquid oxygen (Methalox) propellants </b>
@@ -37,7 +37,7 @@ Why methane? Several reasons:
 - a good balance between energy and storability. This is particularly true compared to hydrogen that delivers more energy but that is also super hard to store ( volume and size of atoms )
 
 - Finally, methane can be synthesized on Mars using the “Sabatier process”, combining atmospheric CO₂ with hydrogen. This means future missions could refuel on Mars for the return trip which is exactly what SpaceX wants. 
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/flames.png" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/flames.png" alt="Image" class="left-image">
 
 <b> 3/ cryogenic propellants </b>
 
@@ -51,7 +51,7 @@ This leads to:
 
 Also, how did the propellant enters and burns into the combustion chamber ( seems simple ? NO !) . Liquid methane and liquid oxygen are stored in separate cryogenic tanks aboard the rocket. From there, each propellant is directed to its respective “turbopump”, which raises the pressure to the levels required for combustion ( yes you need pressure for combustion ). The Raptor then employs a “full-flow staged combustion cycle”, meaning BOTH propellants pass through preburners before entering the main combustion chamber. 
 
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/raptor.png" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/raptor.png" alt="Image" class="left-image">
 In the fuel-rich preburner, a small amount of LOX combusts with methane, producing hot gas that drives the methane turbopump. Meanwhile, in the oxidizer-rich preburner, a small amount of methane combusts with LOX to generate hot, oxidizer-rich gas that powers the oxygen turbopump. The hot gases from both preburners, then, under high pressure and temperature, are injected into the main combustion chamber where they combust COMPLETELY, producing the immense thrust needed to propel the rocket. 
 (hope this explanation wasn’t that messy )
 
@@ -89,7 +89,7 @@ This approach was very good and has led to several versions of the Raptor:
 - Raptor V1: The initial prototype, used for early testing and development.
 - Raptor V2: Improved performance and manufacturability.
 - Raptor V3: Further enhancements, including design simplifications and better integration of components ( this is the one that looks like it comes from a SI-FI movie).
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/evolutionraptor.jpeg" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/evolutionraptor.jpeg" alt="Image" class="left-image">
 
 <b> 6/ mass production </b>
 
@@ -108,7 +108,7 @@ You need to understand that the raptor engine isn’t only a good engine. It’s
 Reusability: Designed for rapid reuse. And we all know how SpaceX loves reusability 
 
 - Mars Colonization: thanks again, to the methane. 
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/starship.png" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/starship.png" alt="Image" class="left-image">
 
 Anyway hope this very long but fascinating ( to me) article was enjoyable. I feel like engineers and entrepreneurs have so much to learn in this engine’s story and I always found it very interesting even though I never did such advanced research on the subject… 
 See you!

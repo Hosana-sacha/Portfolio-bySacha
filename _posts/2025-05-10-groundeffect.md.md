@@ -5,7 +5,7 @@ date: 2025-05-10
 tags: [aerodynamics, planes, airflow]
 categories: blog
 excerpt: "I wanted to write an article about a research paper I’m currently reading but when trying to understand the subject, I found myself unable to understand the challenges that the researchers faced. They talked about “ground effect” but I never heard of it.  "  
-image: /Portfolio-bySacha/ressourcesblog/airflow.jpg
+image: /ressourcesblog/airflow.jpg
 featured: false
 ---
 I wanted to write an article about a research paper I’m currently reading but when trying to understand the subject, I found myself unable to understand the challenges that the researchers faced. They talked about “ground effect” but I never heard of it. Little did I know that it was more famous for airplanes and their airflow aerodynamics… I’m  really glad to have learned more about this effect as I learned a lot about aerodynamics at my last summer experience at UCL. 
@@ -14,13 +14,13 @@ So, ground effect is something for me that is quite not intuitive. Here’s the 
 
 First of all, how does a plane fly ? Well the wings of a plane, thanks to their shape, generate lift by increasing the velocity ( even though some people do not agree with this vision) at the top of the wing and decreasing it at the bottom. When you have high speed at the top, you generate a lower pressure and vice versa. 
 
-<img src="/Portfolio-bySacha/ressourcesblog/airflow.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/airflow.jpg" alt="Image" class="left-image">
 
 As you can see on the image above, vectors are drawn, representing force. We have to acknowledge that when the airplane moves at a sufficient speed, the “ red vectors” are more “powerful” than the blue  one, so we fly. The force represented by these arrows is lift. 
 
 Ok good, now you also have to know that a plane generates “drag”, this drag is created by the formation of wingtips vortices. These result from the behaviours of air and its interaction with the wingtips. The vortices are formed because of the same difference in pressure that allows the plane to fly. It’s basically twireling air that creates induced drag. This drag is a force that pulls in the opposite direction of the plane’s movement, like a slow brake. It’s actually terrible for plane companies as it requires more fuel for the planes in order to counterbalance.
 
-<img src="/Portfolio-bySacha/ressourcesblog/vortices.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/vortices.jpg" alt="Image" class="left-image">
 
 But when a plane approaches the ground, there is no more space for the vortices to form, or they are less powerful. Mathematically: reduced vortices = reduced drag = increased lift. And here you go, that’s what ground effect looks like! Because the air doesn’t have space under the wings to create vortices, it is “trapped” under it and creates a cushioning effect, lifting the plane because of reduced drag. 
 

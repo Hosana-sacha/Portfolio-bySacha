@@ -5,7 +5,7 @@ date: 2025-03-05
 tags: [dubai, real estate, market]
 categories: blog
 excerpt: "In February 2025, Dubai's real estate market experienced a notable shift: a 0.57% decline in property prices, marking the first decrease in two years."  
-image: /Portfolio-bySacha/ressourcesblog/dubai.jpg
+image: /ressourcesblog/dubai.jpg
 featured: false  # Only one post should be featured
 ---
 

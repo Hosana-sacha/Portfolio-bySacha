@@ -1,7 +1,7 @@
 ---
 title: "Noise Cancelling Project "
 description: "an engineering-based project that is trying to develop a noise cancelling solution to sound  pollution inside houses due to outdoor traffic. <BR> &#128994 Ongoing &#128994"
-image: /Portfolio-bySacha/ressourcesprojects/noisecancelling/waves.jpg
+image: /ressourcesprojects/noisecancelling/waves.jpg
 layout: ongoing-projects
 ---
 

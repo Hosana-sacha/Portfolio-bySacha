@@ -5,7 +5,7 @@ date: 2025-03-23
 tags: [Maths, Hidden Figures, Dif. eq.]
 categories: blog
 excerpt: "I love the movie Hidden Figures — it's actually one of my favorites, and I could talk about it and about Katherine Johnson (the main character) for literally hours. Unfortunately, this article isn't about cinema but about maths!..."  
-image: /Portfolio-bySacha/ressourcesblog/tbnmethod.jpg
+image: /ressourcesblog/tbnmethod.jpg
 featured: false # Only one post should be featured
 ---
 
@@ -43,7 +43,7 @@ Well, turns out it's super simple:
   - **N** (Normal): the vector directed 90° from the tangent  
   - **B** (Binormal): I had never seen this in my life and I don't want to explain someting I berely unnderstand, but all I know is that B = T × N  
 
-<img src="/Portfolio-bySacha/ressourcesblog/tbnmethod.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/tbnmethod.jpg" alt="Image" class="left-image">
 
 This representation of an object orbiting in space is actually super important because it allows you to describe motion at a certain time, not just position. With this model, you can predict where satellites will be three seconds after orbit, which is quite useful when you're NASA. This method is also referred to as the **TBN method**.  
 
@@ -60,7 +60,7 @@ The base of this method is the most GHETTO, RECKLESS, INSANE thing I have ever s
 You have an equation where f is known, and y is an unknown variable:  
 dy/dt = f(x,t),  y(t0) = y0
 
-<img src="/Portfolio-bySacha/ressourcesblog/eulerfromkhanacademy.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/eulerfromkhanacademy.jpg" alt="Image" class="left-image">
 
 After watching another video from Khan Academy, I realized that this was miraculously related to what we are doing in math right now. (Photo above)  
 

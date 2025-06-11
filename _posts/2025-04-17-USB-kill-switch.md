@@ -5,7 +5,7 @@ date: 2025-04-17
 tags: [electrical engineering, computer, USB]
 categories: blog
 excerpt: "Today I’m going to talk about a field of engineering that I don’t specially like but I find useful and fun when applied to real life cases: electrical engineering. And more specifficaly, we’re going to talk about USB killers."  
-image: /Portfolio-bySacha/ressourcesblog/USBkiller.jpg
+image: /ressourcesblog/USBkiller.jpg
 featured: false
 ---
 Today I’m going to talk about a field of engineering that I don’t specially like but I find useful and fun when applied to real life cases: electrical engineering. And more specifficaly, we’re going to talk about USB killers. 

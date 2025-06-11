@@ -5,7 +5,7 @@ date: 2025-05-24
 tags: [neutino detector, resarch, standard model]
 categories: blog
 excerpt: "Last time, I clicked on a video for the only reason that it had a good miniature ( yeah I didn’t even look at the title). I was very surprised to discover the incredible Super-Kamiokande: an immense neutrino detector from japan."  
-image: /Portfolio-bySacha/ressourcesblog/section-3/neutino-detector.png
+image: /ressourcesblog/section-3/neutino-detector.png
 featured: false
 ---
 Last time, I clicked on a video for the only reason that it had a good miniature ( yeah I didn’t even look at the title). I was very surprised to discover the incredible Super-Kamiokande: an immense neutrino detector from japan. 
@@ -21,7 +21,7 @@ Inside the tank, around 11 thousand photomultiplier tubes (PMTs) are mounted to 
 Charged current interaction is one of the most iconic examples: inverse beta decay:  
 <code>&#x03BD;&#x0305;<sub>e</sub> + p → e<sup>+</sup> + n</code>
 
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/beta-decay.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/beta-decay.jpg" alt="Image" class="left-image">
 
 An anti-electron-neutrino (&#x03BD;&#x0305;<sub>e</sub>), sort of a ghost-like particle flying in from somewhere, maybe a nuclear reaction in the Sun or a supernova from millions of light-years away, enters the detector and hits a proton in the water. That proton is just part of a hydrogen atom (since water is H₂O, there's tons of hydrogen available here).  
 When the &#x03BD;&#x0305;<sub>e</sub> collides with the proton, something rare and special happens: they interact via the weak nuclear force (one of the four fundamental forces in physics), and the result is two new particles:  
@@ -35,7 +35,7 @@ Cherenkov radiation appears as a cone of blue light, and when this cone expands 
 
 The PMTs pick up this faint flash and, by analyzing: the timing of the light hits, the pattern and shape of the ring they make on the walls and the intensity; scientists can figure out all kinds of things: how much energy the neutrino had, where it came from, and even what kind of neutrino it was. The shape of the ring tells us whether it was from a positron or a muon, and the angle tells us the incoming direction of the original neutrino.
 
-<img src="/Portfolio-bySacha/ressourcesblog/section-3/standart-model.png" alt="Image" class="left-image">
+<img src="/ressourcesblog/section-3/standart-model.png" alt="Image" class="left-image">
 
 Now here's where it gets crazy: there are three different types of neutrinos: electron, muon, and tau, and they can oscillate as they travel through space or matter. This phenomenon only makes sense if neutrinos have mass, even if it's insanely small. The super kamiokande revealed that the neutrino had actually a mass. At the time, this really shattered part of the Standard Model, because neutrinos having mass wasn’t originally included.
 

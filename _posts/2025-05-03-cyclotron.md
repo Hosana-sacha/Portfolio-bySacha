@@ -5,7 +5,7 @@ date: 2025-05-03
 tags: [physics, electro-magnetic fields, cyclotron]
 categories: blog
 excerpt: "So I’d like to talk about a physics instrument that I discovered in a physics exercise for school. At first I didn’t really catch how it worked but now it’s more clear and I think it’s really mind blowing even though it’s hard to understand. "  
-image: /Portfolio-bySacha/ressourcesblog/CERNcyclotron.jpg
+image: /ressourcesblog/CERNcyclotron.jpg
 featured: false
 ---
 
@@ -22,7 +22,7 @@ But this velocity isn’t very high, we want to accelerate particles to a speed 
 That’s why we’re going to use something else: a magnetic field! see the image below to understand the way a cyclotron works. 
 NB: purple arrows represent the magnetic field, yellow for the electrical fiel and the red dot is our particle. 
 
-<img src="/Portfolio-bySacha/ressourcesblog/cyclotron.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/cyclotron.jpg" alt="Image" class="left-image">
 
 As you can see, the fact that we added a magnetic field and that the electrical field producer, the “dees” (grey discs on the image above) are hollow which lets the particle move inside of it is essential. We basically created an electrical/magnetic-field-made race track for charged particles. 
 

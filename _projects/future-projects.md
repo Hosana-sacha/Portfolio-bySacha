@@ -1,7 +1,7 @@
 ---
 title: "<i> Alea Jacta </i>"
 description: "take a glimpse at my future work, coming soon !<BR> &#x1F7E3; Not Started &#x1F7E3;"
-image: /Portfolio-bySacha/ressourcesprojects/future/dubai-sacha.JPG
+image: /ressourcesprojects/future/dubai-sacha.JPG
 layout: old-future-projects
 ---
 
@@ -22,7 +22,7 @@ layout: old-future-projects
   <p>One day I watched a Youtube video about sonoluminescence, which is a rare physical phenomenon that occurs when an air bubble is trapped into a liquid and sound waves are sent. The bible starts mysteriously to collapse on itself, emitting a strong light flash and scientists even believe that at the core of the bubble, a beginning of nuclear fusion could possibly appear. If true, this would be an international headline as nuclear fusion is a type of energy we’re still trying to control. </p>
 
 <p> Therefore, I’d like to reproduce this video at my school lab. Given the challenges the person on the video encountered when trying to demonstrate this phenomenon, my project would probably take some time and I’d like to do it with other classmates that could assist me. I wanted to do it this year but turns out I really didn’t have the opportunity and time to make it so… maybe next year! </p>
-<img src="/Portfolio-bySacha/ressourcesprojects/future/sonoluminescence.jpg" alt="Image" class="left-image">
+<img src="/ressourcesprojects/future/sonoluminescence.jpg" alt="Image" class="left-image">
 
  <h2>Library consultant</h2>
 

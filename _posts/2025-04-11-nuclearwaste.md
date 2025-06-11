@@ -5,7 +5,7 @@ date: 2025-04-11
 tags: [recycling, nuclear energy, new process]
 categories: blog
 excerpt: "I live in Paris, France; and here, almost 70% of our electricity comes from nuclear energy. Therefore, France is the country that is the most dependent on nuclear energy in the world. The French government made that choice because nuclear energy is reliable, constant and efficient."  
-image: /Portfolio-bySacha/ressourcesblog/nuclearrecycling.jpg
+image: /ressourcesblog/nuclearrecycling.jpg
 featured: false
 ---
 
@@ -20,7 +20,7 @@ Well first, we need to understand what we’re having at the end of the reaction
 
 NB: I’m really happy to see how they separate the different elements because I learned exactly this chemical technique in my chemistry class this year! I like to see the application of what we are learning at school in real life. 
 
-<img src="/Portfolio-bySacha/ressourcesblog/nuclearwaste.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/nuclearwaste.jpg" alt="Image" class="left-image">
 
 Then, we need to separate the plutonium and uranium and we’re making this by adding another chemical that will change the state of plutonium, separating them. At the end of the process, we’re left with the three separated components. 4% of them is Fission Product that is not usable, then there is the uranium that will be re-used in nuclear plants instead of mining it and purified plutonium. This last one is the trouble maker here because guess where humans are using purified plutonium ? In nuclear weapons… 
 
