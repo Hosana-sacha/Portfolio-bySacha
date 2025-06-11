@@ -113,7 +113,7 @@
 
     <div class="grid">
       {% for project in site.projects %}
-      <a href="{{ site.baseurl }}{{ project.url }}" class="project-card">
+      <a href="{{ project.url }}" class="project-card">
           <img src="{{ project.image }}" alt="{{ project.title }}">
           <div class="overlay">
             <h2>{{ project.title }}</h2>

@@ -33,22 +33,22 @@ footer {
 
 /* background of each section*/
 .about-bg {
-  background-image: url('/Portfolio-bySacha/assets/images/notgrainyaboutme-bg.jpg');
+  background-image: url('/assets/images/notgrainyaboutme-bg.jpg');
   background-size: cover;         /* OR try 'contain' depending on effect you want */
   background-repeat: no-repeat;
   background-position: center center;
 }
 .portfolio-bg {
-  background-image: url('/Portfolio-bySacha/assets/images/notgrainyportfolio-bg.jpg');
+  background-image: url('/assets/images/notgrainyportfolio-bg.jpg');
 }
 .projects-bg {
-  background-image: url('/Portfolio-bySacha/assets/images/notgrainyprojects-bg.jpg');
+  background-image: url('/assets/images/notgrainyprojects-bg.jpg');
 }
 .blog-bg {
-  background-image: url('/Portfolio-bySacha/assets/images/notgrainyblog-bg.jpg');
+  background-image: url('/assets/images/notgrainyblog-bg.jpg');
 }
 .contactme-bg {
-  background-image: url('/Portfolio-bySacha/assets/images/notgrainycontact-bg.jpg');
+  background-image: url('/assets/images/notgrainycontact-bg.jpg');
 }
 
 /* glassy Cards*/
