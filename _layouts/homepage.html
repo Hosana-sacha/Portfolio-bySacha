@@ -112,19 +112,18 @@ layout: null
       font-weight: 463;
     }
  
-    .scroll-box {
-      position: absolute;
-      bottom: 5vh;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 0.5rem 1.25rem;
-      z-index: 20;
-    }
+.scroll-box {
+  /* Remove absolute positioning */
+  position: static; /* or just remove this line */
+  margin-top: 1.5rem; /* space below welcome text */
+  display: inline-flex; /* inline-flex to keep it nicely sized */
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  z-index: 20;
+}
 
     .arrows {
       position: relative;
@@ -404,7 +403,7 @@ footer {
   </div>
   <!-- Welcome Screen -->
   <section id="welcome">
-    <h1 class="welcome-text">You're <span class="word-welcome">Welcome</span> to SH's <br> handmade website</h1>
+    <h1 class="welcome-text"><span class="word-welcome">Welcome</span> to Sacha's <br> handmade website</h1>
     <a href="#main" class="scroll-box">
       <div class="arrows">
         <div class="arrow arrow-first"></div>
@@ -413,6 +412,7 @@ footer {
       <span class="scroll-text">Scroll down</span>
     </a>
   </section>
+  
   
   <main id="main">
     <section id="about-me" class="section-bg about-bg">

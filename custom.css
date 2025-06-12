@@ -20,6 +20,15 @@ section, div, main, header, footer {
   border-bottom: 1px solid #ddd;
 }
 
+@media (max-width: 600px) {
+  body {
+    transform: scale(0.9);
+    transform-origin: top left;
+    /* To avoid horizontal scroll caused by scaling */
+    width: 111.11%; /* 1 / 0.9 ≈ 1.1111 */
+  }
+}
+
 /* BACKGROUND STYLES */
 .section-bg {
   background-size: cover;
