@@ -385,13 +385,16 @@ footer {
 }
 
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) {
+      document.getElementById('mobile-disclaimer').style.display = 'block';
+    }
+  });
+</script>
 
 </head>
-<script>
-  if (window.innerWidth <= 768) {
-    document.getElementById('mobile-disclaimer').style.display = 'block';
-  }
-</script>
+
 <body>
   <div id="mobile-disclaimer" style="display: none;">
   💻​ This website is optimized for laptop 💻​
