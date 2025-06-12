@@ -387,7 +387,17 @@ footer {
 </style>
 
 </head>
+<script>
+  if (window.innerWidth <= 768) {
+    document.getElementById('mobile-disclaimer').style.display = 'block';
+  }
+</script>
 <body>
+  <div id="mobile-disclaimer" style="display: none;">
+  💻​ This website is optimized for laptop 💻​
+  <button onclick="document.getElementById('mobile-disclaimer').style.display='none'" style="margin-left:10px;">Close</button>
+</div>
+
   <div class="scrollspy-container">
     <div class="scrollspy-inner">
       <div class="progress-line"></div>
