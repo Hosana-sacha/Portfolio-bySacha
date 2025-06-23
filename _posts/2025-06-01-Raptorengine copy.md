@@ -4,13 +4,13 @@ title: "THE SUN IS WHITE (and green)"
 date: 2025-06-21
 tags: [Sun, Planck, light theory]
 categories: blog
-excerpt: "Since I’m very young, I’ve always followed news and the arrival of new technologies around aerospace engeneering. It often seems very complicateOk… I’ll try to stay calm for this one but one day, I was in 9th grade and I was talking to my physics teacher. She said the sun was yellow and I interrupted her, telling her that it was actually white but for some reason, she kept saying it was yellow...."  
+excerpt: "Ok… I’ll try to stay calm for this one but one day, I was in 9th grade and I was talking to my physics teacher. She said the sun was yellow and I interrupted her, telling her that it was actually white but for some reason, she kept saying it was yellow...."  
 image: /ressourcesblog/section-4/rayleigh-2.png
 featured: true
 ---
 Ok… I’ll try to stay calm for this one but one day, I was in 9th grade and I was talking to my physics teacher. She said the sun was yellow and I interrupted her, telling her that it was actually white but for some reason, she kept saying it was yellow. It made me kinda mad but what do you want to do ? She’s the teacher: if she says she’s right, then she is ( even though I knew it was incorrect ). This feeling of injustice randomly came back when I was in Bordeaux today for my SAT exam, watching a video about the true color of the sun (spoiler alert: I was … ). 
 
-So the sun is white, but why ? Well, the real question is why would you assume it would be yellow ? In fact, a lot of people know that our sky is blue because molecules of our atmosphere emit blue and absorb other colors of the spectrum. Now… I said it absorbed other colors of the spectrum but if we assume the sun is yellow, it would only emit yellow light so our atmosphere couldn't be blue. 
+So the sun is white, but why ? Well, the real question is why would you assume it would be yellow ? In fact, a lot of people know that our sky is blue because molecules of our atmosphere emit blue and absorb other colors of the spectrum. Now… I said it absorbed other colors of the spectrum but if we assume the sun is yellow, it would only emit yellow light so our atmosphere couldn't be blue.
 
 Why we believe the sun is yellow is actually because of the sunsets. The Rayleigh effect is a phenomenon that is increased during sunsets: when the white light hits ATM’s (atmosphere’s) molecules, the blue is scattered away but yellow and orange light go through and is neither absorbed nor emitted, that’s why we see the sun yellow. During sunsets, if you study the system sun-earth, you realise there’s way more air molecules between you and the sun than when it’s up in the sky. If there’s more molecules, this effect is exacerbated (because of Earth’s curvature)  and we see more of the yellow-orange light from the sun and assume it is this color. 
 
