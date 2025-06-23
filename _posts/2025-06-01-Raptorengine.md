@@ -6,7 +6,7 @@ tags: [SpaceX, aerospace engineering, buisness model]
 categories: blog
 excerpt: "Since I’m very young, I’ve always followed news and the arrival of new technologies around aerospace engeneering. It often seems very complicated and reserved to an elite capable of understanding how rockets and spaceships works... "  
 image: /ressourcesblog/section-3/raptor-images.png
-featured: true
+featured: false
 ---
 Since I’m very young, I’ve always followed news and the arrival of new technologies around aerospace engeneering. It often seems very complicated and reserved to an elite capable of understanding how rockets and spaceships works. Turns out it’s not that hard if you deeply want to understand it. 
 One company I have particularly followed is SpaceX and their crazy plan to make spacial exploration common while colonising mars (only that). But to do this, SpaceX needs new technology and here commes the Raptor engine, a groundbreaking piece of engineering that's not just another rocket engine, but a complete rethinking of how we propel ourselves into space!
