@@ -6,7 +6,7 @@ tags: [Sun, Planck, light theory]
 categories: blog
 excerpt: "Ok… I’ll try to stay calm for this one but one day, I was in 9th grade and I was talking to my physics teacher. She said the sun was yellow and I interrupted her, telling her that it was actually white but for some reason, she kept saying it was yellow...."  
 image: /ressourcesblog/section-4/rayleigh-2.png
-featured: true
+featured: false
 ---
 Ok… I’ll try to stay calm for this one but one day, I was in 9th grade and I was talking to my physics teacher. She said the sun was yellow and I interrupted her, telling her that it was actually white but for some reason, she kept saying it was yellow. It made me kinda mad but what do you want to do ? She’s the teacher: if she says she’s right, then she is ( even though I knew it was incorrect ). This feeling of injustice randomly came back when I was in Bordeaux today for my SAT exam, watching a video about the true color of the sun (spoiler alert: I was … ). 
 
