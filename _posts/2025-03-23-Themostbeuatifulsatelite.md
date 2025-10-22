@@ -5,7 +5,7 @@ date: 2025-03-23
 tags: [NASA, aerospace, satellite]
 categories: blog
 excerpt: "This week I wasn't able to write an article... But here's something I wrote on Tuesday 5th of March 2024 about a NASA satellite that is fairly considered "  
-image: /ressourcesblog/thewaythesatelliteworks.jpg
+image: /ressourcesblog/thewaythesateliteworks.jpg
 featured: false
 ---
 
@@ -17,11 +17,11 @@ At this time, NASA needed to know if communication in space would work by sendin
 
 The most incredible thing is that it worked — not so well, but it worked. However, scientists and engineers at NASA needed something that could reflect waves in space, and they invented ECHO (ECHO 1 and ECHO 2). They were basically giant balloons that were orbiting in space… that’s it.
 
-<img src="/ressourcesblog/satellitenasa.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/satelitenasa.jpg" alt="Image" class="left-image">
 
 Today, this might seem pretty primitive and useless, but at the time, it worked! Scientists were sending messages to the balloon when it was flying above LA, for example, and engineers in Washington, D.C., were able to receive them. This was mind-blowing because scientists proved that a large communication system based on satellites could possibly work.
 
-<img src="/ressourcesblog/thewaythesatelliteworks.jpg" alt="Image" class="left-image">
+<img src="/ressourcesblog/thewaythesateliteworks.jpg" alt="Image" class="left-image">
 
 Another thing that these balloons did was calculate the real size of Earth; we estimate that thanks to them, the size was now ten times more accurate than before.  
 Finally, they had a scientific interest, but also a political and social one: for example, the US and the Soviet Union exchanged messages with them (they even called it “the friendly sputnik”), and they helped NASA show the world what was possible to do with them. These satellites truly revolutionized the way that we see space and communication, and today, we consider them the most beautiful satellites ever made, both from a physical and social/scientific aspect. It made me wonder: Do engineers have to take example from this story to create new satellites?
