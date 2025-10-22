@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My new favorite YT chanel"
+title: "My New Favorite YT Channel"
 date: 2025-03-23
 tags: [Maths, Hidden Figures, Dif. eq.]
 categories: blog
@@ -16,10 +16,9 @@ Ellie is a YouTuber who posts videos diving into the maths behind different movi
 
 First of all, she starts by solving the first equation we see in the movie:  
 
-(x²+6x-7)(2x²-5x-3) = 0
+(x² + 6x - 7)(2x² - 5x - 3) = 0
 
-
-*"Quite simple!"* said I. *"Let's establish (x² + 6x -7) = 0  &  (2x² -5x -3) = 0 and solve with the quadratic formula."* But, of course, my ego needed to be crushed by someone.  
+*"Quite simple!"* said I. *"Let's establish (x² + 6x - 7) = 0 & (2x² - 5x - 3) = 0 and solve with the quadratic formula."* But, of course, my ego needed to be crushed by someone.  
 
 **Trigger Warning:** The math I'm about to explain is super hard for an 8th-grade middle schooler. Though I didn't think for a second about this method because my brain has assimilated so many automatisms at school.  
 What she did was only... only... factorize and solve a first-degree equation. (Told you, that was it.)  
@@ -34,19 +33,18 @@ Anyway, another thing she showed was the famous scene where Katherine stands up 
 
 Of course, Katherine... we ALL know what Euclidean coordinates are.  
 
-Well, turns out it's super simple:  
+Well, it turns out it's super simple:  
 
 - The **Euclidean coordinate system** is the "classic" way of representing our world mathematically in 3D. It comes with a classic x, y, z plane, where each point A has associated coordinates (xA, yA, zA).  
 - The **Frenet Frame**, on the other hand, is the one Katherine uses. It describes the kinematic properties of a point moving along a differentiable curve in 3D Euclidean space. This means that instead of the beloved x, y, z, the point is described by:  
 
   - **T** (Tangent): the vector pointing in the direction of motion  
   - **N** (Normal): the vector directed 90° from the tangent  
-  - **B** (Binormal): I had never seen this in my life and I don't want to explain someting I berely unnderstand, but all I know is that B = T × N  
+  - **B** (Binormal): I had never seen this in my life, and I don't want to explain something I barely understand, but all I know is that B = T × N  
 
 <img src="/ressourcesblog/tbnmethod.jpg" alt="Image" class="left-image">
 
 This representation of an object orbiting in space is actually super important because it allows you to describe motion at a certain time, not just position. With this model, you can predict where satellites will be three seconds after orbit, which is quite useful when you're NASA. This method is also referred to as the **TBN method**.  
-
 
 Now, let's end with the most important explanation.  
 
@@ -58,7 +56,7 @@ So, the basics: if you have a curve (shown below) that describes the trajectory 
 The base of this method is the most GHETTO, RECKLESS, INSANE thing I have ever seen. The principle is super simple:  
 
 You have an equation where f is known, and y is an unknown variable:  
-dy/dt = f(x,t),  y(t0) = y0
+dy/dt = f(x, t), y(t₀) = y₀
 
 <img src="/ressourcesblog/eulerfromkhanacademy.jpg" alt="Image" class="left-image">
 
@@ -66,8 +64,8 @@ After watching another video from Khan Academy, I realized that this was miracul
 
 **Basically, the method is:**  
 - Calculate the tangent at a known point  
-- Add h to x 
-- Assume that y(x+h) , which is the function of the tangent, is equal to the wanted curve, meaning that the newly created point is on or near the curve  
+- Add h to x  
+- Assume that y(x + h), which is the function of the tangent, is equal to the wanted curve, meaning that the newly created point is on or near the curve  
 - Repeat this until you eventually die  
 
 This is an awkward way of solving a problem because:  
@@ -80,8 +78,6 @@ However, it's a numerical method (used more by computers) that helps determine t
 
 Anyway, I loved discovering all this cool stuff about maths and the way it's portrayed in the film. Plus, I found a fascinating new YT channel and took my first step into the world of differential equations!  
 
-Here's the links of the videos. The images that had been used comes from them. 
-https://www.youtube.com/watch?v=Et0lj0kbAk8 : Ellie's YT channel 
-https://www.youtube.com/watch?v=q87L9R9v274 : the video from Khan Academy on Euler's method, differeciaal equation ( AP calculus)
-
-
+Here are the links to the videos. The images that have been used come from them.  
+https://www.youtube.com/watch?v=Et0lj0kbAk8 : Ellie's YT channel  
+https://www.youtube.com/watch?v=q87L9R9v274 : the video from Khan Academy on Euler's method, differential equations (AP Calculus)
