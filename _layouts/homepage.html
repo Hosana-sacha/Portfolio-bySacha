@@ -398,12 +398,14 @@ footer {
   pointer-events: none;
   width: 200px;
   height: 200px;
+  z-index: 100;
 }
 
 /* reveal on hover */
 .glass-card:hover ~ .orbit-container {
   opacity: 1;
   transform: translateY(-50%) scale(1) scaleX(1);
+  z-index: 100;
 }
 
 /* the 3 rotating photos */
@@ -421,11 +423,13 @@ footer {
   animation: orbit 6s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 100;
 }
 
 /* appear on hover */
 .glass-card:hover ~ .orbit-container .orbit-photo {
   opacity: 1;
+  z-index: 100;
 }
 
 /* perfect circular orbit */
