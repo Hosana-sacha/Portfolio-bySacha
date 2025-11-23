@@ -52,8 +52,7 @@
       border-radius: 1rem;
       cursor: pointer;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: block;        /* 🟢 FIX 1 */
-      line-height: 0;        /* 🟢 FIX 2:*/
+      aspect-ratio: 3 / 2;  /* 🟢 All cards are perfect squares */
     }
 
     .project-card img {
@@ -62,6 +61,7 @@
       display: block;
       opacity: 1;
       transition: opacity 0.3s ease;
+      object-fit: cover;      /* 🟢 Fill the card, crop if needed */
     }
 
     .project-card:hover {
