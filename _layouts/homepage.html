@@ -380,9 +380,76 @@ footer {
 
   .card-container {
     padding: 0.5rem;
+    position: relative;
   }
 }
 
+/*test*/ 
+
+.orbit-container {
+  position: absolute;
+  right: -200px;               /* distance from card — adjust after testing */
+  top: 50%;
+  transform: translateY(-50%) scale(0.6) scaleX(0.3);
+  transform-origin: left center;
+
+  opacity: 0;
+  transition: all 0.55s cubic-bezier(0.22, 1, 0.36, 1); /* genie-like */
+  pointer-events: none;
+  width: 200px;
+  height: 200px;
+}
+
+/* reveal on hover */
+.glass-card:hover ~ .orbit-container {
+  opacity: 1;
+  transform: translateY(-50%) scale(1) scaleX(1);
+}
+
+/* the 3 rotating photos */
+.orbit-photo {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 14px;             /* rounded rectangles */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: orbit 6s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* appear on hover */
+.glass-card:hover ~ .orbit-container .orbit-photo {
+  opacity: 1;
+}
+
+/* perfect circular orbit */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(85px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(85px) rotate(-360deg);
+  }
+}
+
+/* small offsets so they overlap but stay synchronized */
+.p2 {
+  transform-origin: center;
+}
+.p3 {
+  transform-origin: center;
+}
+
+/* disable effect on small screens if you want */
+@media(max-width: 1024px) {
+  .orbit-container { display: none; }
+}
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -440,6 +507,13 @@ footer {
             <br>
             Some of the fields that fascinate me the most are Astronomy, Engineering, Science, and Economics. Outside of school, I’m learning German and Arabic, I do theatre, play guitar, read a lot, and take part in many exiting projects across various fields.</p>
         </a>
+
+        <div class="orbit-container">
+        <img src="/ressourcesprojects/high-school/feed-back.jpg" class="orbit-photo p1">
+        <img src="/ressourcesprojects/high-school/feed-back.jpg" class="orbit-photo p2">
+        <img src="/ressourcesprojects/high-school/feed-back.jpg" class="orbit-photo p3">
+        </div>
+
       </div>
     </section>
   <!-- FOR LATER, check for the scrollspy also if restablish 

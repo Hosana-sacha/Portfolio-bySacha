@@ -1,6 +1,6 @@
 ---
-title: "High School Project"
-description: "Some of the most impactful project I lead in High School <BR> &#128308; Finished &#128308;"
+title: "High School Projects"
+description: "Some of the most impactful projects I lead in High School <BR> &#128308; Finished &#128308;"
 image: /ressourcesprojects/high-school/feed-back.jpg
 layout: old-future-projects
 ---

@@ -5,7 +5,9 @@ image: /ressourcesprojects/lecondecoeur/logo-LDC.jpg
 layout: ongoing-projects
 ---
 
-  <p> <b>NB: for any information related to this project, you can either contact me on the <a href="/contact-page"> regular email </a> or at lecondecoeur@gmail.com! </b></p>
+  <p> <b>NB: for any information related to this project, you can either contact me on the <a href="/contact-page"> regular email </a> or at direction@lecondecoeur.fr. </b></p>
+
+ <b> website accesible <a href="www.lecondecoeur.fr" > here !</a> <b>
 
   <p>When I was 8, I had an accident and lost a kidney. I’ve been hospitalized for more than a week. While drawing the crabs that were painted in my room with the pencils that my grandpa gave me when visiting, I realized what happened. What it meant to be at the hospital, to have lost a kidney for the rest of my life…Hopefully, I made this supposedly traumatizing experience into a fuel that would help me set the rules of my life: what I wanted to do, what I wanted to make in this world and most importantly, what were my dreams ? I believe I made so little thanks to the people surrounding me: my family and friends: I realized how difficult it was to be in the hospital but also how much you can get from this experience. Today, I want to help others realize that but in my way. I’ve always been a good student and I think that’s the time to mix my skills, experience and dreams to make something great. </p>
 
