@@ -388,17 +388,17 @@ footer {
 
 .orbit-container {
   position: absolute;
-  right: 10px;               /* distance from card — adjust after testing */
   top: 50%;
+  /* Dynamically center between card's right edge and scrollspy */
+  left: calc(100% + ((100vw - 2vw - 100%) / 2));
   transform: translateY(-50%) scale(0.6) scaleX(0.3);
   transform-origin: left center;
 
+  width: 200px;
+  height: 200px;
   opacity: 0;
-  transition: all 0.55s cubic-bezier(0.22, 1, 0.36, 1); /* genie-like */
+  transition: all 0.55s cubic-bezier(0.22,1,0.36,1);
   pointer-events: none;
-  width: 300px;
-  height: 300px;
-  z-index: 100;
 }
 
 /* reveal on hover */
