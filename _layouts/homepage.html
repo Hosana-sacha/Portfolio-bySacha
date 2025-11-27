@@ -381,16 +381,18 @@ footer {
   .card-container {
     padding: 0.5rem;
     position: relative;
+    box-sizing: border-box;
+}
   }
 }
 
 /*test*/ 
 
+/* simpler, safer orbit positioning */
 .orbit-container {
   position: absolute;
   top: 50%;
-  /* Dynamically center between card's right edge and scrollspy */
-  left: calc(100% + ((100vw - 2vw - 100%) / 2));
+  left: calc(100% + 1rem);   /* place just to the right of the card */
   transform: translateY(-50%) scale(0.6) scaleX(0.3);
   transform-origin: left center;
 
