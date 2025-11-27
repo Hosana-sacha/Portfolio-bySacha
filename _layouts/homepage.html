@@ -390,11 +390,11 @@ footer {
 
 /* simpler, safer orbit positioning */
 .orbit-container {
-  position: fixed;
-  top: 50%;
-  left: 75vw; 
-  transform: translateY(-50%) scale(0.6) scaleX(0.3);
-  transform-origin: left center;
+  position: fixed;                 /* stays fixed on the screen */
+  top: 0;                          /* JS will set the exact Y position */
+  left: 0;                         /* JS will set the exact X position */
+  transform: translate(-50%, -50%) scale(0.6) scaleX(0.3);
+  transform-origin: center;
 
   width: 200px;
   height: 200px;
@@ -657,7 +657,26 @@ footer {
       onScroll(); // Trigger once on load
     });
   </script>
-  
+  <script>
+function positionOrbit() {
+  const card = document.querySelector('.your-card-class');
+  const scrollspy = document.querySelector('.scrollspy-container');
+  const orbit = document.querySelector('.orbit-container');
+
+  const cardRight = card.getBoundingClientRect().right;
+  const scrollspyLeft = scrollspy.getBoundingClientRect().left;
+
+  const middle = (cardRight + scrollspyLeft) / 2;
+
+  orbit.style.left = middle + 'px';
+  orbit.style.top = card.getBoundingClientRect().top + card.offsetHeight/2 + 'px';
+}
+
+// Position on load
+window.addEventListener('load', positionOrbit);
+// Recalculate on resize
+window.addEventListener('resize', positionOrbit);
+</script>
   
 </body>
 </html>
