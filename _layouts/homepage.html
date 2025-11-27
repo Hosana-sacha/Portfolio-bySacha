@@ -390,15 +390,17 @@ footer {
 
 /* simpler, safer orbit positioning */
 .orbit-container {
-  position: fixed;                 /* stays fixed on the screen */        
-  transform: translate(-50%, -50%) scale(0.6) scaleX(0.3);
-  transform-origin: center;
-
+  position: fixed;
+  left: 50px;               /* JS will override */
+  top: 50px;                /* JS will override */
   width: 200px;
   height: 200px;
-  opacity: 0;
-  transition: all 0.55s cubic-bezier(0.22,1,0.36,1);
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.22,1,0.36,1);
+  transform: translate(-50%, -50%) scale(0.6) scaleX(0.3);
+  transform-origin: center;
+  z-index: 100;
 }
 
 /* reveal on hover */
@@ -655,26 +657,69 @@ footer {
       onScroll(); // Trigger once on load
     });
   </script>
-  <script>
-function positionOrbit() {
-  const card = document.querySelector('.your-card-class');
+<script>
+(function () {
+  // choose the card you want to anchor to - adjust selector if needed
+  const getActiveCard = () => document.querySelector('#about-me .card-container');
+
   const scrollspy = document.querySelector('.scrollspy-container');
   const orbit = document.querySelector('.orbit-container');
 
-  const cardRight = card.getBoundingClientRect().right;
-  const scrollspyLeft = scrollspy.getBoundingClientRect().left;
+  if (!orbit || !scrollspy) return; // nothing to do
 
-  const middle = (cardRight + scrollspyLeft) / 2;
+  function positionOrbitFor(card) {
+    if (!card) return;
+    const cardRect = card.getBoundingClientRect();
+    const spyRect = scrollspy.getBoundingClientRect();
 
-  orbit.style.left = middle + 'px';
-  orbit.style.top = card.getBoundingClientRect().top + card.offsetHeight/2 + 'px';
-}
+    // midpoint between card right edge and scrollspy left edge
+    const middleX = (cardRect.right + spyRect.left) / 2;
 
-// Position on load
-window.addEventListener('load', positionOrbit);
-// Recalculate on resize
-window.addEventListener('resize', positionOrbit);
+    // vertical middle of the card (relative to viewport)
+    const middleY = cardRect.top + cardRect.height / 2;
+
+    // place orbit centered at that point (fixed positioning)
+    orbit.style.left = Math.round(middleX) + 'px';
+    orbit.style.top = Math.round(middleY) + 'px';
+  }
+
+  // compute for the default card on load / resize
+  function recompute() {
+    const card = getActiveCard();
+    if (!card) return;
+    positionOrbitFor(card);
+  }
+
+  // initially place on load
+  window.addEventListener('load', recompute);
+  window.addEventListener('resize', recompute);
+
+  // When user hovers the card, recompute and add a helper class so CSS shows the orbit
+  const card = getActiveCard();
+  if (card) {
+    card.addEventListener('mouseenter', () => {
+      // add hovered class to .card-container so sibling .orbit-container CSS can show it
+      card.classList.add('hovered');
+      positionOrbitFor(card);
+    });
+    card.addEventListener('mousemove', () => {
+      // keep repositioning while moving (useful if layout shifts slightly)
+      positionOrbitFor(card);
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('hovered');
+      // optionally hide orbit immediately or after a short delay
+      // orbit will hide due to opacity CSS rule
+    });
+  }
+
+  // Also recalc when the scrollspy position might change (e.g., fonts loaded)
+  // Use a MutationObserver for safety (lightweight)
+  const mo = new MutationObserver(recompute);
+  mo.observe(document.body, { attributes: true, childList: true, subtree: true });
+})();
 </script>
+
   
 </body>
 </html>
