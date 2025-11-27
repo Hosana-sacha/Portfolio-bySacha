@@ -391,7 +391,7 @@ footer {
 /* simpler, safer orbit positioning */
 .orbit-container {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 70vw; 
   transform: translateY(-50%) scale(0.6) scaleX(0.3);
   transform-origin: left center;
@@ -414,11 +414,11 @@ footer {
 .orbit-photo {
   position: absolute;
 
-  width: 15vh;
-  height: 15vh;
+  width: 18vh;
+  height: 18vh;
 
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 14px;
 
   top: 50%;
   left: 50%;
@@ -438,10 +438,10 @@ footer {
 /* perfect circular orbit */
 @keyframes orbit {
   from {
-    transform: rotate(0deg) translateX(5vh) rotate(0deg);
+    transform: rotate(0deg) translateX(10vh) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(5vh) rotate(-360deg);
+    transform: rotate(360deg) translateX(10vh) rotate(-360deg);
   }
 }
 
